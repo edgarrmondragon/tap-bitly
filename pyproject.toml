@@ -31,7 +31,7 @@ dynamic = [
 ]
 dependencies = [
   "requests>=2",
-  "singer-sdk~=0.35.0",
+  "singer-sdk>=0.35",
 ]
 optional-dependencies.dev = [
   "tap-bitly[testing,typing]",
@@ -41,7 +41,7 @@ optional-dependencies.testing = [
   "pytest>=7.4",
   "pytest-durations",
   "pytest-github-actions-annotate-failures",
-  "singer-sdk[testing]~=0.35.0",
+  "singer-sdk[testing]>=0.35",
 ]
 optional-dependencies.typing = [
   "mypy",
