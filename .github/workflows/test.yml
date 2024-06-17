@@ -62,6 +62,7 @@ jobs:
 
     - name: Run
       env:
+        PIP_PRE: "1"
         TAP_BITLY_TOKEN: ${{ secrets.TAP_BITLY_TOKEN }}
       run: |
         hatch run ${{ matrix.script }}
